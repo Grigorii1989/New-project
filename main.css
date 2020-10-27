@@ -68,3 +68,43 @@ header.hero_header {
     left: 0;
     top: 0;
 }
+.main{
+    position: relative;
+    top: 50%;
+   
+}
+.main_img{
+    width: 500px;
+ 
+   
+}
+.project_section{
+    font-size: 0;
+}
+.project{
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    
+}
+.project img{
+    width: 100%;
+}
+.project .project-overlay{
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+height: 100%;
+opacity: 0;
+background: linear-gradient(0deg, rgb(52, 84, 122), rgb(52, 84, 122));
+transition: opacity.5s
+}
+.project .project-overlay:hover{
+    opacity: 0.8;
+}
+@media (max-width:600px) {
+        .project{
+            width: 100%;
+        }
+}
